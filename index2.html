@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes borderAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      .animated-border {
+        width: 200px;
+        height: 200px;
+        border: 5px solid transparent;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, red, blue, red);
+        background-clip: border-box;
+        animation: borderAnimation 3s infinite linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animated-border"></div>
+  </body>
+</html>
